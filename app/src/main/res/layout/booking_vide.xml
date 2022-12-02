@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+    android:id="@+id/my_booking"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/my_bookings"
+    android:layout_marginTop="28dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+     />
+
+    <ImageView
+        android:layout_marginTop="24dp"
+        android:id="@+id/image_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_empty"
+        app:layout_constraintBottom_toTopOf="@id/text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_booking"
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_grey"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="lorem ipsum dolor sit amet, consectetur adipisci elit, sed do elusmod"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+<TextView
+android:id="@+id/text"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:textSize="24sp"
+    android:textFontWeight="900"
+android:text="You have no bookings yet"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/image_empty"
+    app:layout_constraintBottom_toTopOf="@id/text2"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
